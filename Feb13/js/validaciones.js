@@ -68,4 +68,7 @@ function validarForm(){
 
         botonLimpiar=document.getElementById("limpiar");
         botonLimpiar.onclick=limpiarForm;
+
+        botonEnviar=document.getElementById("enviar");
+        botonEnviar.onclick=validarForm;
     }
