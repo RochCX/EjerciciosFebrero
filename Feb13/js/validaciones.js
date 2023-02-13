@@ -4,7 +4,7 @@ function validarForm(){
     var expRegNombre= /^([a-z ñáéíóú]{2,60})$/i;
 	var expRegEmail =  /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,4})+$/;
 
-    var formulario = document.getElementById("contacto-frm");
+    var formulario = document.getElementById("contact-frm");
 
     var nombre = document.getElementById("nombre");
     var edad = document.getElementById("edad");
@@ -61,7 +61,7 @@ function validarForm(){
 
     }
     function limpiarForm(){
-        document.getElementById("contacto-frm").reset();
+        document.getElementById("contact-frm").reset();
     }
     window.onload=function(){
         var botonEnviar,botonLimpiar;
