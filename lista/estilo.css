@@ -1,0 +1,24 @@
+li{
+    height: 50px;
+    text-align: 50px;
+}
+.lista1{
+    list-style-type: square;
+}
+.lista2{
+    list-style-type: none;
+}
+.lista3{
+    list-style-image: url("lista.jpg");
+    margin: 20px;
+
+}
+img{
+    width: 200px;
+    height: 100px;
+    transition: all 5s;
+}
+img:hover{
+    transform: rotate(360deg) scale(3);
+
+}

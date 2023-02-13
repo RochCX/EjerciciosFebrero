@@ -1,0 +1,35 @@
+body{
+    background: rgba(0, 0, 0, .2);
+    font-family: sans-serif;
+}
+#portada,#contra{
+    text-align: center;
+    background-color: #3c5c6a;
+    padding: 20px;
+    color: #fff;
+    height: 560px;
+}
+#pagina1{
+    text-align: center;
+}
+#pagina1 h3,#pagina1 p{
+    text-align: left;
+}
+#pagina2{
+    background-color: #a8cfe0;
+    padding: 20px;
+}
+.pagina{
+    padding: 30px;
+    height: 580px;
+}
+#wrapper{
+    padding-top: 40px;
+}
+#gotopage{
+    text-align: center;
+}
+#in_go{
+    width: 40px;
+    margin-right: 10px;
+}

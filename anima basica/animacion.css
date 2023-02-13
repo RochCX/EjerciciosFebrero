@@ -6,10 +6,18 @@ div{
     left: 300px;
     background:red;
     transition: all 5s;
+    text-align: center;
+}
+h2{
+    color: red;
 }
 div:hover{
     transform: rotate(7000deg) scale(2);
     background: orange;
     width: 300px;
+    text-decoration-color: aliceblue;
 
+}
+h2:hover{
+    color: black;
 }
