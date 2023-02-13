@@ -1,0 +1,12 @@
+body{
+    background: blue;
+}
+#circulo{
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    background-color: red;
+    border: 1px solid red;
+    margin-left: 75px;
+    margin-top: 5px;
+}

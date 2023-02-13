@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    max-width: 960px;
+    margin: auto;
+
+}
+.bloque h2{
+    margin-bottom: 40px;
+}
+.bloque h1{
+    text-align: center;
+    margin: 0;
+    font-size: 160px;
+    line-height: 600px;
+}
+.bloque p{
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+/* aqui empieza el fudamento del paralaje */
+.bloque.parallax{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parallax.imagen-1{
+    background-image:url(../imgs/1.jpeg) ;
+}
+.parallax.imagen-2{
+    background-image:url(../imgs/2.jpeg) ;
+}
+.parallax.imagen-3{
+    background-image:url(../imgs/1.jpeg) ;
+}
