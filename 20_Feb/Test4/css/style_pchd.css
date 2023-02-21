@@ -1,0 +1,18 @@
+body{
+    background: greenyellow;
+}
+.imagen1{
+    background: red;
+}
+.imagen2{
+    background: violet;
+}
+.imagen3{
+    background:green ;
+}
+.imagen4{
+    background:blue ;
+}
+img{
+    display: none;
+}

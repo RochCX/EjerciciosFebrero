@@ -1,0 +1,31 @@
+body{
+    background: grey;
+}
+.wrapper{
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.imagen1{
+    background-color: yellow;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.imagen2{
+    background-color: yellow;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.imagen3{
+    background-color: yellow;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.imagen4{
+    background-color: yellow;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
