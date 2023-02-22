@@ -1,0 +1,19 @@
+@mixin circulo($color){
+    background: $color;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+footer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    line-height: 75px;
+    .circulo{
+        @include circulo(green);
+    }
+}
