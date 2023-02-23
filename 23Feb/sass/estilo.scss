@@ -1,0 +1,28 @@
+body{
+    background-color: #a74444;
+}
+@mixin cuadrados($color:blue,$ancho:100px,$alto:100px){
+    background-color: $color;
+    width: $ancho;
+    height: $alto;
+    border-radius: 94px;
+    background: #a74444;
+    box-shadow: inset 7px 7px 14px #5a2525,
+                inset -7px -7px 14px #f46363;
+}
+$color:null;
+@for $i from 1 through 100{
+    // el debug es el depurador para verificiar por terminar el calculo que se esta realizando(resultado)
+    @debug "" +$i+ " %2 " + $i%2;
+    @if($i%2==1){
+        $color:green;
+    }
+    @else{
+        $color:blue;
+    }
+    #rectangulo#{$i}{
+        @include cuadrados($color,300px,40px);
+        margin: auto;
+        margin-top: 15px;
+    }
+}

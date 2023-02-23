@@ -1,0 +1,50 @@
+
+@mixin neomo($radio,$eje){
+    border-radius: $radio;
+    background: #71b654;
+    // para inidicar una cifra negativa, debe estar entre parentesis
+    // Para realizar una operacion matemaica, debe estar entre parentesis
+    box-shadow: inset ($eje) ($eje) ($eje*2) #3d622d,
+                inset (-$eje) (-$eje) ($eje*2) #a5ff7b;
+}
+.contenedor{
+    width: 40%;
+    height: 550px;
+    border: 5px solid blue;
+    margin: auto;
+    // border-radius: 94px;
+    // background: #71b654;
+    // box-shadow: inset ($eje) ($eje) ($eje*2) #3d622d,
+    //             inset -($eje) -($eje) ($eje*2) #a5ff7b;
+    @include neomo(94px,7px);
+}
+.circulo{
+    width:70px;
+    height:70px;
+    background-color: rgba(100, 120, 30, .3);
+    border-radius: 50%;
+    background: linear-gradient(145deg, #79c35a, #66a44c);
+    box-shadow:  5px 5px 10px #2d4922,
+                -5px -5px 10px #b5ff86;
+                // Animacion
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@for $iterador from 1 through 5{
+    .circulo-#{$iterador}{
+        animation-name: animacion#{$iterador};
+
+        @keyframes animacion#{$iterador}{
+            100%{
+                transform: translate(50%*$iterador);
+            }
+        }
+        @if($iterador==2){
+            animation-direction: alternate-reverse;
+        }
+        @if ($iterador==4){
+            animation-direction: alternate-reverse;
+        }
+    }
+}
